@@ -1,0 +1,7 @@
+[Unit]
+Description=Checks journal for CPU throttle events and sends alerts to slack
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/power-monitor/power-monitor.sh
+
