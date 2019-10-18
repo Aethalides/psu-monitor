@@ -1,0 +1,11 @@
+[Unit]
+Description=Power Monitor
+After=network.target
+
+[Timer]
+OnCalendar=*:0,15,30,45
+AccuracySec=30m
+Persistent=true
+
+[Install]
+WantedBy=timers.target
